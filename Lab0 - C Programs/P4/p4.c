@@ -81,7 +81,7 @@ void main() {
         curr = curr->next;
         i+=1;
     }
-    float avg = sum / resultN[1];
+    float avg = (resultN[1]>0)?sum / resultN[1]:0;
     printf("Array B : ");
     for(i = 0;i<resultN[0];i++)
         printf("%d  ", b[i]);
