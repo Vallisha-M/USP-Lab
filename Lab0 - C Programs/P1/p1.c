@@ -22,6 +22,6 @@ void main() {
     }
     int result[] = {0, 0};
     sum(arr, n, result);
-    printf("Odd Sum = %d\n", *result);
-    printf("Even Sum = %d\n\n", *(result+1));
+    printf("Odd Sum = %d\n", *(result+1));
+    printf("Even Sum = %d\n\n", *result);
 }

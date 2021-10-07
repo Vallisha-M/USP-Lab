@@ -14,7 +14,7 @@ void arraySplit(int* a, node* result[],int* resultN, int n) {
     int b = 0;
     int c = 0;
     for(int i = 0; i<n; i++) {
-        if(a[i]%2==0) {
+        if(a[i]%2!=0) {
             node* curr = (node*) malloc(sizeof(node));
             curr->data = a[i];
             if(headB==NULL){
