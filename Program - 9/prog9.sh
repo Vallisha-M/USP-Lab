@@ -1,10 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 echo "Enter n"
 read n
-i=2
 sum=0
-while [ $i -le $n ]; do
+for (( i=2; i<=$n; i+=2)); do
 sum=`expr $sum + $i`
-i=`expr $i + 2`
 done
 echo "Sum of even numbers upto n = "$sum
