@@ -1,10 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 echo "Enter n"
 read n
-i=1
 sum=0
-while [ $i -le $n ]; do
+for ((i=1; i<=n;i++)); do
 sum=`expr $sum + $i`
-i=`expr $i + 1`
 done
 echo "Sum of natural numbers upto n = "$sum
