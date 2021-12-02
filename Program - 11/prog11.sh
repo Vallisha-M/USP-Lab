@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 echo "Enter base"
 read b
 echo "Enter exponent"
